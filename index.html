@@ -33,7 +33,6 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="icon" href="https://thuephongtro.com/assets/images/favicon.ico">
     <title>Cho thuê phòng trọ, cho thuê nhà trọ, tìm phòng trọ</title>
     <meta name="robots" content="index,follow">
 <meta name="revisit-after" content="1 days">
@@ -284,7 +283,31 @@
         color: #0CB1C7
       }
 
-      </style></head>
+      </style>
+        <script>
+          // Bắt đầu bằng cách kiểm tra sự kiện click trên cả trang
+          document.addEventListener('click', function(event) {
+              // Kiểm tra xem phần tử được click có phải là thẻ <a> không
+              if (event.target.tagName === 'A') {
+                  // Kiểm tra xem href của thẻ <a> có phải là "https://heyzine.com/flip-book/ec84f323f2.html" không
+                  if (event.target.getAttribute('href') !== "https://heyzine.com/flip-book/ec84f323f2.html") {
+                      // Ngăn chặn xử lý tiếp theo của sự kiện click
+                      event.preventDefault();
+                      // Ngăn chặn sự kiện click từ việc lan truyền lên các phần tử cha
+                      event.stopPropagation();
+                      // Hiển thị thông báo cảnh báo (có thể bỏ qua nếu không muốn thông báo)
+                  }
+              } else {
+                  // Nếu phần tử được click không phải là thẻ <a>, ngăn chặn sự kiện click
+                  event.preventDefault();
+                  // Ngăn chặn sự kiện click từ việc lan truyền lên các phần tử cha
+                  event.stopPropagation();
+                  // Hiển thị thông báo cảnh báo (có thể bỏ qua nếu không muốn thông báo)
+              }
+          });
+      </script>
+    
+    </head>
 <body>
     <div id="wrapper" class="homepage">
         <header class="header">
@@ -292,8 +315,9 @@
             <ul class="menu-nav list-unstyled d-none d-xl-flex align-items-center mb-0">
                 <li> <a class="" href="https://thuephongtro.com/cho-thue-phong-tro">Cho thuê phòng trọ</a> </li>
                 <li> <a class="" href="https://thuephongtro.com/cho-thue-nha-nguyen-can">Cho thuê nhà ở</a> </li>
+                <li> <a class="" href="https://heyzine.com/flip-book/ec84f323f2.html" target="_blank" style="color: red; font-weight: bold;">Công nghệ VR</a> </li>
                 <li> <a class="" href="#">Đặt tour</a> </li>
-                <li> <a class="" href="#">Công nghệ VR</a> </li>
+                
                 <li> <a class="" href="#">Mạng xã hội</a> </li>
             </ul>
                 <div class="user-nav d-flex align-items-center">
@@ -708,7 +732,7 @@
                         </figure>
                         <aside class="post-aside" style="">
                             <h4 class="title limit-text-2">
-                                Cho thuê căn hộ mini tại đồng phú,đồng hới gần các cơ quan nhà nước và bệnh viện cuba gần chợ đồng phú và chợ đồng hới vào ở ngay giá siêu rẻ 4 tháng
+                                Cho thuê căn hộ mini tại Cái Răng , ần các cơ quan nhà nước và bệnh viện cuba gần chợ đồng phú và chợ đồng hới vào ở ngay giá siêu rẻ 4 tháng
                             </h4> <span class="price">4 Triệu/tháng</span>
                             <div class="info-features">
                                 <span class="feature-item">
@@ -719,7 +743,7 @@
 
                             <div class="post-address limit-text-2" style="border-bottom:0; margin-top:5px; margin-bottom:0; padding:0">
                                 <span>
-                                    Đồng Hới, Quảng Bình
+                                    Cái Răng, Cần Thơ
                                 </span>
                             </div>
                             
@@ -734,7 +758,7 @@
                         </figure>
                         <aside class="post-aside" style="">
                             <h4 class="title limit-text-2">
-                                Cho thuê phòng trọ cao cấp, gần aeon mall tân phú, xem hình
+                                Cho thuê phòng trọ cao cấp, gần aeon mall An Khánh, xem hình
                             </h4> <span class="price">2.8 Triệu/tháng</span>
                             <div class="info-features">
                                 <span class="feature-item">
@@ -745,7 +769,7 @@
 
                             <div class="post-address limit-text-2" style="border-bottom:0; margin-top:5px; margin-bottom:0; padding:0">
                                 <span>
-                                    Tân Phú, Hồ Chí Minh
+                                    An Khánh, Cần Thơ
                                 </span>
                             </div>
                             
@@ -760,7 +784,7 @@
                         </figure>
                         <aside class="post-aside" style="">
                             <h4 class="title limit-text-2">
-                                Căn hộ  full nội thất ban công tại phú nhuận
+                                Căn hộ  full nội thất ban công tại Bình Thuỷ
                             </h4> <span class="price">5.5 Triệu/tháng</span>
                             <div class="info-features">
                                 <span class="feature-item">
@@ -771,7 +795,7 @@
 
                             <div class="post-address limit-text-2" style="border-bottom:0; margin-top:5px; margin-bottom:0; padding:0">
                                 <span>
-                                    Phú Nhuận, Hồ Chí Minh
+                                    Bình Thuỷ, Cần Thơ
                                 </span>
                             </div>
                             
@@ -786,7 +810,7 @@
                         </figure>
                         <aside class="post-aside" style="">
                             <h4 class="title limit-text-2">
-                                Căn hộ dv quận 5 - trần phú - gần đh sư phạm
+                                Căn hộ dv An Hoà - gần Trường ĐH Kỹ thuật - Công nghệ Cần Thơ
                             </h4> <span class="price">5.5 Triệu/tháng</span>
                             <div class="info-features">
                                 <span class="feature-item">
@@ -797,7 +821,7 @@
 
                             <div class="post-address limit-text-2" style="border-bottom:0; margin-top:5px; margin-bottom:0; padding:0">
                                 <span>
-                                    Quận 5, Hồ Chí Minh
+                                    Cần Thơ
                                 </span>
                             </div>
                             
@@ -830,7 +854,7 @@
                 <article class="property-item is_thuenhanh" style="margin-left: 10px">
                     <a href="https://thuephongtro.com/cho-thue-tro-co-may-lanh-it-phong--169525.html" class="d-block boxshadow bg-white">
                         <figure class="thumb mb-0">
-                            <img src="./Cho thuê phòng trọ, cho thuê nhà trọ, tìm phòng trọ_files/default.jpg" alt="thumbnail" loading="lazy" height="130">
+                            <img src="https://feliz-home.com.vn/wp-content/uploads/2023/02/uecuhb.jpg" alt="thumbnail" loading="lazy" height="130">
                             <span class="number-image"><i class="icon ic-image"></i>0</span>
                         </figure>
                         <aside class="post-aside" style="">
@@ -844,7 +868,7 @@
                             </div>
                             <div class="post-address limit-text-2" style="border-bottom:0; margin-top:5px; margin-bottom:0; padding:0">
                                 <span>
-                                    Bình Thạnh, Hồ Chí Minh
+                                    Bình Thuỷ, Cần Thơ
                                 </span>
                             </div>
                             
@@ -859,7 +883,7 @@
                         </figure>
                         <aside class="post-aside" style="">
                             <h4 class="title limit-text-2">
-                                Phòng rộng đẹp có gác lửng, máy lạnh - 7a/9 thành thái, p.14, q.10 - gần đại học bách khoa
+                                Phòng rộng đẹp có gác lửng, máy lạnh - gần đại học Cần Thơ
                             </h4> <span class="price">4.2 Triệu/tháng</span>
                             <div class="info-features">
                                 <span class="feature-item">
@@ -868,7 +892,7 @@
                             </div>
                             <div class="post-address limit-text-2" style="border-bottom:0; margin-top:5px; margin-bottom:0; padding:0">
                                 <span>
-                                    Quận 10, Hồ Chí Minh
+                                  Bình Thuỷ, Cần Thơ
                                 </span>
                             </div>
                             
@@ -883,7 +907,7 @@
                         </figure>
                         <aside class="post-aside" style="">
                             <h4 class="title limit-text-2">
-                                Phòng siêu đẹp 205/41/34 phạm văn chiêu, p. 14, q. gò vấp (máy lạnh, tủ áo, khoá vân tay, máy giặt)
+                                Phòng siêu đẹp Trần Hưng Đạo, An Khánh, Cần Thơ (máy lạnh, tủ áo, khoá vân tay, máy giặt)
                             </h4> <span class="price">2.9 Triệu/tháng</span>
                             <div class="info-features">
                                 <span class="feature-item">
@@ -892,7 +916,7 @@
                             </div>
                             <div class="post-address limit-text-2" style="border-bottom:0; margin-top:5px; margin-bottom:0; padding:0">
                                 <span>
-                                    Gò Vấp, Hồ Chí Minh
+                                    An Khánh, Cần Thơ
                                 </span>
                             </div>
                             
@@ -907,7 +931,7 @@
                         </figure>
                         <aside class="post-aside" style="">
                             <h4 class="title limit-text-2">
-                                Phòng căn hộ mini 1pn, 1pk, 26/42 tân sơn nhì, quậntân phú (có thang máy)
+                                Phòng căn hộ mini 1pn, 1pk (có thang máy)
                             </h4> <span class="price">3.9 Triệu/tháng</span>
                             <div class="info-features">
                                 <span class="feature-item">
@@ -916,7 +940,7 @@
                             </div>
                             <div class="post-address limit-text-2" style="border-bottom:0; margin-top:5px; margin-bottom:0; padding:0">
                                 <span>
-                                    Tân Phú, Hồ Chí Minh
+                                    Cái Răng, Cần Thơ
                                 </span>
                             </div>
                             
@@ -940,8 +964,8 @@
                     <img src="./Cho thuê phòng trọ, cho thuê nhà trọ, tìm phòng trọ_files/20200531080439-2fupv.jpg" alt="news" loading="lazy">
                 </figure>
                 <aside class="news-aside text-align-center">
-                    <span class="news-publish">25/05/2020</span>
-                    <h3 class="news-title">Nhà thuê TP.HCM giảm giá 2-3 triệu đồng/tháng</h3>
+                    <span class="news-publish">25/05/2023</span>
+                    <h3 class="news-title">Nhà thuê Cần Thơ giảm giá 2-3 triệu đồng/tháng</h3>
                 </aside>
             </a>
             <a class="news-item" href="https://thuephongtro.com/tin-tuc/top-10-website-dang-tin-cho-thue-phong-tro-nha-tro-hieu-qua-nhat-2020-p28130.html">
@@ -949,7 +973,7 @@
                     <img src="./Cho thuê phòng trọ, cho thuê nhà trọ, tìm phòng trọ_files/20200309135926-xinj2.jpg" alt="news" loading="lazy">
                 </figure>
                 <aside class="news-aside text-align-center">
-                    <span class="news-publish">09/03/2020</span>
+                    <span class="news-publish">09/03/2023</span>
                     <h3 class="news-title">Top 10 website đăng tin cho thuê phòng trọ, nhà trọ hiệu quả nhất 2020</h3>
                 </aside>
             </a>
@@ -957,7 +981,7 @@
     <div class="news-by-cat-right clearfix">
             <a class="news-item" href="https://thuephongtro.com/tin-tuc/chu-nha-co-phai-chiu-trach-nhiem-khi-nguoi-thue-phong-tro-su-dung-chat-ma-tuy-khong-p28126.html">
                 <aside class="news-aside margin-right-10">
-                    <span class="news-publish">09/03/2020</span>
+                    <span class="news-publish">09/03/2023</span>
                     <h3 class="news-title">
                         Chủ nhà có phải chịu trách nhiệm khi người thuê phòng trọ sử dụng chất ma túy không?
                     </h3>
@@ -968,9 +992,9 @@
             </a>
             <a class="news-item" href="https://thuephongtro.com/tin-tuc/mau-noi-quy-cho-thue-phong-tro-nha-tro-moi-nhat-2020-p28125.html">
                 <aside class="news-aside margin-right-10">
-                    <span class="news-publish">09/03/2020</span>
+                    <span class="news-publish">09/03/2023</span>
                     <h3 class="news-title">
-                        Mẫu nội quy cho thuê phòng trọ, nhà trọ mới nhất 2020
+                        Mẫu nội quy cho thuê phòng trọ, nhà trọ mới nhất 2023
                     </h3>
                 </aside>
                 <figure class="news-thumb">
@@ -979,7 +1003,7 @@
             </a>
             <a class="news-item" href="https://thuephongtro.com/tin-tuc/bo-cong-thuong-de-xuat-gia-dien-sinh-hoat-5-bac-p28124.html">
                 <aside class="news-aside margin-right-10">
-                    <span class="news-publish">09/03/2020</span>
+                    <span class="news-publish">09/03/2023</span>
                     <h3 class="news-title">
                         Bộ Công thương đề xuất giá điện sinh hoạt 5 bậc
                     </h3>
@@ -1130,15 +1154,15 @@
                                 <ul class="website-info list-unstyled mb-0">
                                     <li>
                                         <div class="icon ic-location-white"></div>
-                                        <div class="text"> 32-34 Điện Biên Phủ, P.Đakao, Quận 1, TP.HCM </div>
+                                        <div class="text">Cần Thơ</div>
                                     </li>
                                     <li>
                                         <div class="icon ic-phone"></div>
-                                        <div class="text">0967833378</div>
+                                        <div class="text">0325830219</div>
                                     </li>
                                     <li>
                                         <div class="icon ic-mail"></div>
-                                        <div class="text">nhatroviet@gmail.com</div>
+                                        <div class="text">phongtrocantho@gmail.com</div>
                                     </li>
                                 </ul>
                             </div>
@@ -1174,8 +1198,8 @@
                 </div>
             </div>
             <div class="footer-copyright text-center">
-                Copyright © 2011 - 2023 Thuephongtro.com. Ghi rõ nguồn
-                "Thuephongtro.com" khi phát hành lại thông tin từ website này.
+                Copyright © 2023 - 2024 phongtrocantho.com. Ghi rõ nguồn
+                "phongtrocantho.com" khi phát hành lại thông tin từ website này.
             </div>
             <div class="footer-toolbar">
                 <div class="footer-toolbar-inner">
